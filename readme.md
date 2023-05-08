@@ -38,3 +38,5 @@ Caused by: org.gradle.api.internal.artifacts.ivyservice.DefaultLenientConfigurat
 
 } #
 
+# 2023_0507_2155 
+Cannot query the value of property 'namespace' because configuration of project ':app' has not completed yet.
