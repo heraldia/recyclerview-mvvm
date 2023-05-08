@@ -83,7 +83,6 @@ dependencies {
     //New Material Design
     implementation 'com.google.android.material:material:1.9.0'
     //Kodein Dependency Injection
-    implementation 'org.kodein.di:kodein-di-generic-jvm:6.4.0'
     implementation 'org.kodein.di:kodein-di-framework-android-x:7.20.1'
     //Android Navigation Architecture
     implementation 'androidx.navigation:navigation-fragment-ktx:2.6.0-beta01'
