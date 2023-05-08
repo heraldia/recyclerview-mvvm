@@ -40,3 +40,9 @@ Caused by: org.gradle.api.internal.artifacts.ivyservice.DefaultLenientConfigurat
 
 # 2023_0507_2155 
 Cannot query the value of property 'namespace' because configuration of project ':app' has not completed yet.
+
+# 2023_0507_2207
+## [android - KotlinJvmAndroidCompilation with name 'debug' not found - Stack Overflow](https://stackoverflow.com/questions/60620140/kotlinjvmandroidcompilation-with-name-debug-not-found) { 
+
+} #
+
