@@ -34,4 +34,7 @@ Execution failed for task ':app:compileDebugJavaWithJavac'.
 
 # 2023_0507_2120
 Caused by: org.gradle.api.internal.artifacts.ivyservice.DefaultLenientConfiguration$ArtifactResolveException: Could not resolve all files for configuration ':app:debugCompileClasspath'.
+## [(293) Could not resolve all files for configuration ':app:debugRuntimeClasspath'. Error Fixed - YouTube](https://www.youtube.com/watch?v=NCzi0_I05yY) { 
+
+} #
 
