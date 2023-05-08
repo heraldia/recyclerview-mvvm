@@ -16,7 +16,7 @@ interface MoviesApi {
         operator fun invoke() : MoviesApi {
             return Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
-                .baseUrl("https://api.simplifiedcoding.in/course-apis/recyclerview/")
+                .baseUrl("https://api.simplifiedcoding.in/course-apis/recyclerview/") // todo
                 .build()
                 .create(MoviesApi::class.java)
         }
