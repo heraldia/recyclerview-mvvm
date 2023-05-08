@@ -17,3 +17,21 @@ Caused by: org.gradle.api.InvalidUserCodeException: Querying the mapped value of
    > Could not find org.kodein.di:kodein-di-generic-jvm:7.3.1.
      Required by:
          project :app
+
+# 2023_0507_2051 
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> Failed to calculate the value of task ':app:compileDebugJavaWithJavac' property 'options.generatedSourceOutputDirectory'.
+   > Querying the mapped value of map(java.io.File task ':app:compileDebugJavaWithJavac' property 'annotationProcessorSourcesDirectory' org.gradle.api.internal.file.DefaultFilePropertyFactory$ToFileTransformer@72cc1043) before task ':app:compileDebugJavaWithJavac' has completed is not supported
+## [Querying the mapped value of map before task compileDebugJavaWithJavac has completed is not supported - Redino blog](http://redino.net/blog/2022/06/querying-the-mapped-value-of-map-before-task-compiledebugjavawithjavac-has-completed-is-not-supported/) { 
+
+} #
+## [我想调试下build.gradle | Gradle 调试-六虎](https://www.6hu.cc/archives/20250.html) { 
+
+} #
+   
+./gradlew Assemble -Dorg.gradle.debug=true –no-daemon
+
+# 2023_0507_2120
+Caused by: org.gradle.api.internal.artifacts.ivyservice.DefaultLenientConfiguration$ArtifactResolveException: Could not resolve all files for configuration ':app:debugCompileClasspath'.
+
