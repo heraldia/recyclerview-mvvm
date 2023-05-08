@@ -9,13 +9,13 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
-import kotlinx.android.synthetic.main.movies_fragment.*
 import net.simplifiedcoding.R
 import net.simplifiedcoding.data.models.Movie
 import net.simplifiedcoding.data.network.MoviesApi
 import net.simplifiedcoding.data.repositories.MoviesRepository
 
 
+@Suppress("DEPRECATION")
 class MoviesFragment : Fragment(), RecyclerViewClickListener{
 
     private lateinit var factory: MoviesViewModelFactory
@@ -40,7 +40,8 @@ class MoviesFragment : Fragment(), RecyclerViewClickListener{
 
         viewModel.getMovies()
 
-        viewModel.movies.observe(viewLifecycleOwner, Observer { movies ->
+        viewModel.movies.observe(viewLifecycleOwner, Observer {
+                movies ->
             recycler_view_movies.also {
                 it.layoutManager = LinearLayoutManager(requireContext())
                 it.setHasFixedSize(true)
